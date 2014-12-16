@@ -1,1 +1,1718 @@
-xxx
+<!DOCTYPE html>
+<head>
+    	<!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2014-02-07T09:53:06.77/html5.min.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2014-02-07T09:53:06.77/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/css/:version:2014-02-07T09:53:07.33/main.min.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2014-02-07T09:53:06.77/font-awesome/css/font-awesome.min.css" />
+<!--[if ie 7]><link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2014-02-07T09:53:06.77/font-awesome/css/font-awesome-ie7.min.css" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="/fanstatic/b2find_theme/:version:2014-03-05T16:03:07.10/b2find_theme.css" />
+
+    <meta charset="utf-8" />
+      <meta name="generator" content="ckan 2.2" />
+    <title>Search guide - B2FIND</title>
+
+    <link rel="shortcut icon" href="/images/icons/b2find.ico" />
+    
+  </head>
+
+
+ <body data-site-root="http://b2find.eudat.eu/" data-locale-root="http://b2find.eudat.eu/" >
+
+    
+    
+
+<div class="b2fheader">
+  <div class="container">
+    <div style="width:600px; margin:0 auto">
+      <a href="http://eudat.eu">
+        <img src="/images/eudat_header.png" alt="EUDAT">
+      </a>
+      <a href="http://b2find.eudat.eu" style="float:right;">
+        <img src="/images/b2find_header.png" alt="EUDAT B2FIND" style="margin-top:4px">
+      </a>
+    </div>
+  </div>
+</div>
+
+ <div class="homepage layout-1">
+    <div class="container">
+      
+            
+            <div class="flash-messages">
+              
+            </div>
+          
+    </div>
+    
+      
+<!-- Snippet home/layout1.html start -->
+<div role="main" class="hero">
+  <div class="container">
+    <div class="row row1">
+      <div class="span6 col1">
+        
+<!-- Snippet home/snippets/b2find_info.html start -->
+
+
+
+    <div class="container">
+        <!-- page.html: start block breadcrumb.html -->
+        
+        
+        <!-- page.html: end block breadcrumb.html -->
+        <!-- page.html: start block body -->
+        
+<div class="row">
+<div class="col-md-12">
+
+<div class="pagebody">
+  <div class="pagebodystripeleft">
+    <div class="pageboxlefttop"></div>
+    <div class="pageboxlefttopadd"></div>
+    <div class="pageboxleftbottomadd"></div>
+    <div class="pageboxleftbottom"></div>
+  </div>
+  <div class="pagebodystriperight">
+    <div class="pageboxrighttop"></div>
+    <div class="pageboxrighttopadd"></div>
+    <div class="pageboxrightbottomadd"></div>
+    <div class="pageboxrightbottom"></div>
+  </div>
+  <div class="pagebodystripemiddle">
+    
+
+
+    <h1>B2FIND User Guide</h1>
+
+    <p>The B2FIND discovery portal supports user-friendly navigation and powerful search functionalities.
+      This includes
+      <ul>
+        <li> Free text search over the full text body </li>
+        <li> Geospatial and 'Timeline' search, i.e. search for all datasets, that
+	  cover a choosen region or time periode. </li>
+        <li> Other 'faceted' search, e.g. selecting values from 'facets', i.e. searchable metadata fields </li>
+      </ul> 
+
+      These search requests can be combined and excecuted in one go.
+
+      This page describes the usage of the B2FIND portal step by step and lists several tips and tricks that you may find useful to this effect.</p>
+
+
+    <h3><strong class="headerboxbodylogo">Index</strong></h3>
+    <br/>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#access-b2find">Access B2FIND portal</a>
+    <br/>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#free-text-search">Free text and faceted search</a>
+    <br/>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#geospatial-search">Geospatial search</a>
+    <br/>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#temporal-search">Temporal search</a>
+    <br/>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#textual-facets">Other textual facets</a>
+</a>
+
+
+<h3>
+  <a name="access-b2find">
+          Access B2FIND portal
+  </a>
+</h3>
+
+<p>You can access the B2FIND catalog at http://b2find.eudat.eu.
+  <img src="../images/userguide/B2FIND_front_page.PNG" alt="B2FIND portal entry page" style="float:right;width:504px;height:380px">
+</p>
+
+From the entry page you can list all communities, that provide metadata to B2FIND by clicking 'Communities'.
+
+By entering text in the provided free text fields 'Search your data' you can directly perform a full text search over the whole catalogue.
+
+If you want to use more subtle and particularized search functionalities, click the button 'Facetted Search'. It's usage is described in the following sections.      
+    </p>
+
+
+<h3>
+  <a name="free-text-search">
+          Free text and faceted search
+  </a>
+</h3>
+
+    <p>
+
+
+      The B2FIND portal provides a "Google-like" <strong>free text search</strong>, that 
+      basically provides you with one input box where you can type your query.
+
+      You would usually simply type
+      the keywords you are interested in and hit return.  For example,
+      if you are interested in documents on <em>mammals</em> and <em>museum</em>
+      , you would type:</p>
+    <form action="http://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="mammals museum" />
+      </blockquote>
+    </form>
+
+    <p>The <strong>facetted search</strong> interface provides you with tools, that allows you to 
+        select values from dedicated 'facets', i.e. searchable fields. For example, to find all the resources where 
+      <em>Kurt Kreppner</em> is one of the authors, you would type:
+
+    </p>
+
+    <blockquote>
+      <form action="http://b2find.eudat.eu/search" method="get">
+        <input type="hidden" name="cc" value="b2find" />
+        <input type="hidden" name="as" value="1" />
+        <input type="hidden" name="ln" value="en" />
+        <table>
+          <tbody>
+            <tr valign="bottom">
+              <td>
+                <input type="text" name="p1" size="16" value="author:*Kurt?Kreppner*" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </blockquote>
+
+
+    <p>Note that the search by clicking the value
+    '*Kurt?Kreppner*' in the value menue list of facet 'Author' in the
+    navigationbar of the B2FIND portal, as described in the section 'Other textual facets', would lead to the same result.
+    </p>
+
+
+<h3>
+  <a name="geospatial-search">
+          Geospatial Search 
+  </a>
+</h3>
+
+<p> In the worldmap widget in the left upper corner you can select a region by drag and drop. This triggers a search for all datasets their spatial extention has an intersection with the selected region.
+</p>
+
+<div class="spatial">
+        <ol>
+                <div>
+            <li>
+
+                <p> Clear possibly previous search request by clicking the Clear button of the 'Filter by location' interface in the navigation bar.</p>
+                <div>
+                <figure>
+                  <img src="../images/userguide/B2FIND_facet_spatial_clear.png" style="width:504px;height:380px" alt="" class="first">
+                </figure>
+                </div>
+
+            </li>
+                </div>
+            <div>
+            <li>
+               <div>
+               <p> Selection of a region from the world map</p>
+               <ol type='a'>
+                  <li>
+                     <div>
+                     <p> Click on the 'Draw a rectangle' button in the right upper corner of the worldmap wiget to start the region selection. Drag with the mouse over the wished rectangle, its borders will be marked red. Finally press the 'Apply' button to excecute the search request.</p>
+                     <figure role="group">
+                       <figure>
+                         <img src="../images/userguide/B2FIND_facet_spatial_select1.png" style="float:left;width:354px;height:270px; hspace=10; vspace=10;" alt="StartYear">
+                         <!-- <figcaption>Click on the left text field in the interface 'Publication Year'</figcaption> -->
+                      </figure>
+                      <figure>
+                         <img src="../images/userguide/B2FIND_facet_spatial_draw_rect1-1.png" style="float:right;width:354px;height:270px;vspace=10" alt="StartYear">
+                      </figure>
+                      <figure>
+                         <img src="../images/userguide/B2FIND_facet_spatial_draw_rect1-2.png" style="float:left;width:354px;height:270px;hspace=10;" alt="StartYear">
+                      </figure>
+                      <figure>
+                         <img src="../images/userguide/B2FIND_facet_spatial_apply1.png" style="width:354px;height:270px" alt="StartYear">
+                      </figure>
+
+
+                    </div>
+
+                  </li>
+            <li>
+               <p> Search result : If excecution of the query is finished, all datasets their spatial extention has an overlap with the selected region are listed in the right panel. </p>
+                <figure>
+                  <img src="../images/userguide/B2FIND_facet_spatial_result1.png" style="width:504px;height:380px" alt="" class="first">
+                </figure>
+            </li>
+        </ol>
+
+
+<h3>
+  <a name="temporal-search">
+          Temporal Search
+  </a>
+</h3>
+
+<p>
+B2FIND provides two kinds of search for date and time :
+
+       <ul>
+            <li> Selection of PublicationYear, i.e. the year the dataset is 'published' in.</li>
+            <li>'Time line' search, i.e. search for all dataests, which cover a choosen time periode.</li>
+       </ul>
+</p>
+
+<h4>
+  <a name="publyear-search">
+     Selection of PublicationYear
+  </a>
+</h4>
+
+<p> In the search widget 'Publication Year' select first a start year by clicking in the left field. In the opened select window you can switch to the right decade (click on '<<' rsp. '>>') that the wished year comprises and where you can select it by clicking. The end year is similar selected in the right field.
+</p>
+
+<div class="publYear">
+        <ol>
+                <div>
+            <li>
+
+                <p> Clear possibly previous search request by clicking the Clear button of the 'Publication Year' interface in the navigation bar.</p>
+                <div>
+                <figure>
+                  <img src="../images/userguide/B2FIND_facet_publYear_clear.png" style="width:504px;height:380px;hspace:10;vspacei:10px" alt="" class="first">
+                </figure>
+                </div>
+
+            </li>
+                </div>
+            <div>
+            <li>
+               <div>
+               <p> Select a periode of publishing years</p>
+               <ol type='a'>
+                  <li>
+                     <div>
+                     <p> Select a start year : Click on the left text field in the interface 'Publication Year'. This results in opening a select panel showing the years of the current decade. By clicking on the '<<' or the '>>' button you can switch to the previous or subfollowing decade. Finally select the wished start year by clicking on it in the decadal panel.</p>
+                     <figure role="group">
+                       <figure>
+                         <img src="../images/userguide/B2FIND_facet_publYear_selectStartYear.png" style="float:left;width:354px;height:270px" alt="StartYear">
+                         <!-- <figcaption>Click on the left text field in the interface 'Publication Year'</figcaption> -->
+                      </figure>
+                      <figure>
+                         <img src="../images/userguide/B2FIND_facet_publYear_selectStartYear_1.png" style="width:354px;height:270px" alt="StartYear">
+                         <!-- <figcaption>This results in opening a select panel showing the years of the current decade.</figcaption> -->
+                      </figure>
+                      <figure>
+                         <img src="../images/userguide/B2FIND_facet_publYear_selectStartYear_2.png" style="float:left;width:354px;height:270px" alt="StartYear">
+                      </figure>
+                      <figure>
+                         <img src="../images/userguide/B2FIND_facet_publYear_selectStartYear_3.png" style="width:354px;height:270px" alt="StartYear">
+                      </figure>
+                    </figure>
+
+
+                    </div>
+
+                  </li>
+                  <li>
+                     <p> Select a end year : Click on the right text field in the interface 'Publication Year'. This results in opening a select panel showing the years of the current decade. By clicking on the '<<' or the '>>' button you can switch to the previous or subfollowing decade. Finally select the wished end year by clicking on it in the decadal panel. This selection will submit the search request.</p>
+
+                     <figure role="group">
+                       <figure>
+                         <img src="../images/userguide/B2FIND_facet_publYear_selectEndYear.png" style="float:left;width:354px;height:270px" alt="StartYear">
+                      </figure>
+                      <figure>
+                         <img src="../images/userguide/B2FIND_facet_publYear_selectEndYear_1.png" style="width:354px;height:270px" alt="StartYear">
+                         <!-- <figcaption>This results in opening a select panel showing the years of the current decade.</figcaption> -->
+                      </figure>
+                      <figure>
+                         <img src="../images/userguide/B2FIND_facet_publYear_selectEndYear_2.png" style="width:354px;height:270px" alt="StartYear">
+                      </figure>
+                    </figure>
+                  </li>
+               </ol>
+               </div>
+            </li>
+               </div>
+            <li>
+               <p> Search result : If execution of the query is finished, all datasets that are published within the the choosen years are listed in the right panel. </p>
+                <figure>
+                  <img src="../images/userguide/B2FIND_facet_publYear_result1.png" style="width:504px;height:380px" alt="" class="first">
+                </figure>
+            </li>
+        </ol>
+</div>
+
+<h4>
+  <a name="timeline-search">
+     Selection of Temporal Coverage
+  </a>
+</h4>
+
+<p> In the search widget 'Timeline' you can select a wished time periode, i.e. the temperol coverage searched for, by zooming in date and time histograms as described in the following.</p>
+
+<div class="itimeLine">
+        <ol>
+            <li>
+
+                <p> Clear possibly previous search request by clicking the 'Clear' button of the timline interface in the navigation bar.</p>
+                <figure>
+                  <img src="../images/userguide/B2FIND_facet_timeline_clear.png" style="width:504px;height:380px" alt="" class="first">
+                </figure>
+            </li>
+            <div>
+            <li>
+               <p> Clicking the button Timeline in the navigation panel opens the time line chart.</p>
+                       <figure>
+                         <img src="../images/userguide/B2FIND_facet_timeline_start.png" style="float:left;width:354px;height:270px" alt="StartYear">
+                      </figure>
+             </li>
+             <li>
+                     <p> Select a periode by dragging the mouse with pressed left in the 'histogram' at the bottom. This causes the openening the datasets/time diagram over the choosen periode the upper part of the chart.</p>
+                      <figure>
+                         <img src="../images/userguide/B2FIND_facet_timeline_basic_select.png" style="width:354px;height:270px" alt="StartYear">
+                      </figure>
+             </li>
+             <li>
+                     <p> Zooming in time</p>
+              <ol type='a'>
+                  <li>
+                     <p> 
+                     'Drag and drop' with the left mouse button hold over a time interval in the upper datasets/time graph (zoomed part is shown). This results in the shrinking of the time line on the selected interval.</p>
+                     <figure role="group">
+                       <figure>
+                         <img src="../images/userguide/B2FIND_facet_timeline_zoom1.png" style="float:left;width:354px;height:270px" alt="StartYear">
+                         <!-- <figcaption>Click on the left text field in the interface 'Publication Year'</figcaption> -->
+                      </figure>
+                      <figure>
+                         <img src="../images/userguide/B2FIND_facet_timeline_zoom2.png" style="width:354px;height:270px" alt="StartYear">
+                         <!-- <figcaption>This results in opening a select panel showing the years of the current decade.</figcaption> -->
+                      </figure>
+                    </figure>
+                  </li>
+                  <li>
+                     <p> (optional) : Reset the last zoom by clicking the button 'Reset zoom'.</p>
+                     <figure role="group">
+                       <figure>
+                         <img src="../images/userguide/B2FIND_facet_timeline_zoom3.png" style="float:left;width:354px;height:270px" alt="StartYear">
+                      </figure>
+                      <figure>
+                         <img src="../images/userguide/B2FIND_facet_timeline_zoom4.png" style="width:354px;height:270px" alt="StartYear">
+                      </figure>
+                    </figure>
+                  </li>
+                  <li>
+                     <p> (optional) : Repeat zooming until the desired section is shown in the chart.
+                     <figure role="group">
+                       <figure>
+                         <img src="../images/userguide/B2FIND_facet_timeline_zoom4.png" style="float:left;width:354px;height:270px" alt="StartYear">
+                      </figure>
+                      <figure>
+                         <img src="../images/userguide/B2FIND_facet_timeline_zoom5.png" style="width:354px;height:270px" alt="StartYear">
+                      </figure>
+                    </figure>
+                  </li>
+               </ol>
+            </li>
+            <li>Select a time interval by holding "Ctrl" (Win/Linux) or "Cmd" (Mac) down and clicking on two points (start and end time) in the chart line. This effects that start and end time are set in the datasets/time graph.
+                <figure>
+                  <img src="../images/userguide/B2FIND_facet_timeline_selectStart.png" style="width:504px;height:380px" alt="" class="first">
+                </figure>
+                <figure>
+                  <img src="../images/userguide/B2FIND_facet_timeline_selectEnd.png" style="width:504px;height:380px" alt="" class="first">
+                </figure>
+            </li>
+            <li>
+                <p>Execution of the query is executed by closing the "Timeline" chat (clicking the "X"-button or the "Esc"-key or background). The chart disappears and search page is updated. I.e. selected 'Start' and 'End' timea are displayed (as integers) in the corresponding fields in the navigation bar and only datasets with corresponding temporal coverage are listed in the right side of the window.</p>
+            </li>
+            <li>
+                <p>Further detailed and extented search can be requested by editing the Start and End fields in the navigatin bar's interface 'Timeline'</p>
+            </li>
+        </ol>
+</div>
+
+<h4>
+  <a name="textual-facets">
+     Other textual facets
+  </a>
+</h4>
+
+<p> In the navigation bar you found several further textual facets as 'Author', 'Discipline' or 'Language'.</p>
+
+<!-- THIS IS TAKEN FROM B2SHARE search guide - NOT CLEAR if this is true or relevant for B2FIND CKAN portal search ?? 
+    <p>The default search mode is a <strong>search for words</strong>.
+      This means that any whitespace you type is not significant, but
+      is rather interpreted to mean "add an automatic boolean AND
+      between words", like Google does.  For example, to find all
+      records that contain both the word <em>ellis</em> and the
+      word <em>muon</em> anywhere in the record, type:</p>
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="ellis muon" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    The whitespace would be significant if you include it within
+    quotes.  There are two phrase searching modes:
+    <ol>
+      <li>The double quotes instruct the search engine to
+        <strong>search for exact phrase</strong>.  This phrase search
+        mode will match if and only if the given metadata field is
+        exactly equal to the input pattern.  For example, to find all
+        documents written by <em>Ellis, J</em> spelled exactly that
+        way, type:
+        <form action="https://b2find.eudat.eu/search" method="get">
+          <input type="hidden" name="ln" value="en" />
+          <blockquote>
+            <input size="40" type="text" name="p" value="&quot;Ellis, J&quot;" />
+            <select name="f">
+              <option value="">any field</option>
+              <option value="title">title</option>
+              <option value="author">author</option>
+            </select>
+            <input class="formbutton" type="submit" name="action" value="Search" />
+          </blockquote>
+        </form>
+      </li>
+      <li>The single quotes instruct the search engine to
+        <strong>search for partial phrase</strong>.  Unlike the exact
+        phrase search, this mode allows for an extra text appearing
+        before/after given pattern.  This is somewhat similar to the
+        "phrase search mode" common on Google and other fulltext
+        engines that search for phrase expressions inside Web pages.
+        For example, to find all the titles containing the
+        expression <em>muon decay</em> regardless of the position of
+        the expression in the title, type:
+        <form action="https://b2find.eudat.eu/search" method="get">
+          <input type="hidden" name="ln" value="en" />
+          <blockquote>
+            <input size="40" type="text" name="p" value="'muon decay'"/>
+            <select name="f">
+              <option value="">any field</option>
+              <option value="title">title</option>
+              <option value="author">author</option>
+            </select>
+            <input class="formbutton" type="submit" name="action" value="Search" />
+          </blockquote>
+        </form>
+        Now you see how to search for an author spelled sometimes as
+        <em>Ellis, J</em> and sometimes as <em>Ellis, Jonathan
+        Richard</em> (and other authors, such as <em>De Lellis,
+        Jim</em>) at the same time:
+        <form action="https://b2find.eudat.eu/search" method="get">
+          <input type="hidden" name="ln" value="en" />
+          <blockquote>
+            <input size="40" type="text" name="p" value="'Ellis, J'" />
+            <select name="f">
+              <option value="">any field</option>
+              <option value="title">title</option>
+              <option value="author" selected="selected">author</option>
+            </select>
+            <input class="formbutton" type="submit" name="action" value="Search" />
+          </blockquote>
+        </form>
+        (See also our specific <a href="#howto-search-for-author">author
+        searching tips</a>.)
+      </li>
+    </ol>
+    <p>The difference between exact and partial phrase searching modes
+      may not be obvious upon first look.  While the latter is more
+      similar to what ``phrase search'' usually means in the context
+      of web page search engines, the former one is usually an order
+      of magnitude faster if you know the precise values you are
+      looking for.</p>
+    <p>(Note: For some indexes such as <em>any field</em>,
+      <em>title</em>, or <em>abstract</em>, there is no distinction
+      between searching for double quoted and single quoted
+      expressions.  Both behave the same usual way.)</p>
+    <p>Another interesting searching mode besides the word and phrase
+      searches is the <strong>regular expression search</strong>,
+      introduced by slashes instead of quotes.  For example, the above
+      partial phrase query <code>'muon decay'</code> is fully
+      equivalent to the regular expression query <code>/muon
+      decay/</code>.  The regular expression syntax is very powerful
+      and permits you to construct very complex queries.  For more
+      information, please consult the <a href="#regexp">regular
+      expression</a> section of this guide.</p>
+
+
+<h3>
+  <a name="boolean">
+          Boolean queries
+
+  </a>
+</h3>
+
+    We have already seen how whitespace adds a silent boolean AND in
+    the search for words.  The other boolean operators include:
+    <blockquote>
+      <table border="1" cellpadding="10">
+        <tr>
+          <td rowspan="3" align="center">
+            <strong>+<br/>AND</strong>
+          </td>
+          <td>
+            <code>ellis +muon</code>
+          </td>
+          <td>
+            matches all records that contain both the word
+            <em>ellis</em> and the the word <em>muon</em>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <code>ellis muon</code>
+          </td>
+          <td>
+            ditto, syntactic sugar
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <code>ellis and muon</code>
+          </td>
+          <td>
+            ditto, syntactic sugar
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2" align="center">
+            <strong>-<br/>NOT</strong>
+          </td>
+          <td>
+            <code>ellis -muon</code>
+          </td>
+          <td>
+            matches all records that contain the word
+            <em>ellis</em> but that do not contain the word
+            <em>muon</em>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <code>ellis not muon</code>
+          </td>
+          <td>
+            ditto, syntactic sugar
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2" align="center">
+            <strong>|<br/>OR</strong>
+          </td>
+          <td>
+            <code>ellis |muon</code>
+          </td>
+          <td>
+            matches all records that contain at least one of the words
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <code>ellis or muon</code>
+          </td>
+          <td>
+            ditto, syntactic sugar
+          </td>
+        </tr>
+      </table>
+    </blockquote>
+
+
+    <p>Logical operations are automatically chained from left to
+      right.  For example, if you want to search for documents written
+      by Ellis on muons or kaons, write:</p>
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="muon or kaon and ellis"/>
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    which looks for <code>(muon or kaon) and ellis</code>.  Note that
+    this gives different results from:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="ellis and muon or kaon"/>
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    which would search for <code>(ellis and muon) or kaon</code>.
+    <p>The left-to-right chaining behaviour permits you to easily
+      refine your search by adding/removing words with and/not or +/-
+      operators.  For example, to exclude the documents on decay from
+      the above search, append <code>-decay</code>:</p>
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="muon or kaon and ellis -decay" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    to get a refined list.  Keep adding/removing terms until you are
+    satisfied.
+
+
+<h3>
+  <a name="parens">
+          Parentheses
+
+  </a>
+</h3>
+
+    You can also use parentheses in your queries to group boolean
+    expressions together:
+
+
+<form action="https://b2find.eudat.eu/search" method="get">
+  <input type="hidden" name="ln" value="en" />
+  <blockquote>
+    <input size="40" type="text" name="p" value="(gravity OR supergravity) AND (ellis OR perelstein)" />
+    <select name="f">
+      <option value="">any field</option>
+      <option value="title">title</option>
+      <option value="author">author</option>
+    </select>
+    <input class="formbutton" type="submit" name="action" value="Search" />
+  </blockquote>
+</form>
+
+    <p>This query returns records containing either <em>gravity</em>
+      or <em>supergravity</em>, and either <em>ellis</em>
+      or <em>perelstein</em> anywhere in the record.</p>
+    <p>Note that you can use any number of parentheses in the query.
+      Nested parentheses, such as <code>foo AND (bar OR (fuux NOT
+      quux))</code>, are also supported.</p>
+
+
+<h3>
+  <a name="punctuation">
+          Special characters and punctuation
+
+  </a>
+</h3>
+
+    <p>When indexing words, an attention is paid to index it both with
+      and without punctuation, so that you should be able to search
+      for terms containing special characters, such as <em>C++</em>,
+      verbatim:</p>
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="C++" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="O'Shea"/>
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author" selected="selected">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    For example, to find records containing the LaTeX expression
+    <code>$e^{+}e^{-}$</code> in the title, type:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="$e^{+}e^{-}$" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title" selected="selected">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    For example, to find document with the report number
+    <em>hep-ph/0204133</em>, type:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="hep-ph/0204133" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    Note that the search is case-insensitive:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="BlaCK hOlEs" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+
+
+<h3>
+  <a name="unicode">
+          International characters
+
+  </a>
+</h3>
+
+    <p>The search engine works with Unicode UTF-8 so you can type your
+      query strings in any language stored in the database.  For
+      example, to find the documents written by (or on) Пушкин,
+      type:</p>
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="пушкин" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    Note that you don't have to type accents to find accented results.
+    For example, type <code>Lemaitre</code> to find papers
+    by <em>Lemaître</em>:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="Lemaitre" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author" selected="selected">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+
+
+<h3>
+  <a name="wildcard">
+          Word truncation/stemming
+
+  </a>
+</h3>
+
+    <p>The word truncation is supported via asterisk (*) wildcard
+      character.  The wildcard instructs the search engine to match
+      any number of characters in that place.  For example, to find
+      records that contain words <em>muon</em>, <em>muons</em>,
+      <em>muonic</em> etc, type:</p>
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="muon*" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    The wildcard query works both in prefix and infix position.  For
+    example, to get all the words that start by <em>CERN-TH</em> and
+    end by <em>31</em>, type:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="CERN-TH*31" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    Note that the wildcard will be ignored if you try to apply it to
+    very short words, such as <em>a*</em>:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="a*" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    The wildcard character can be used also in the phrase searching
+    mode.  For example, to find all the documents whose title starts
+    by "Neutrino mass", type:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="&quot;Neutrino mass*&quot;" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title" selected="selected">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    Recall that we have introduced exact and partial phrase search
+    modes.  Actually, a partial phrase search mode launches an exact
+    search enclosed within wildcards: we could say that <code>'foo bar
+    baz'</code> equals to <code>"*foo bar baz*"</code>.  Now you can
+    see why the partial phrase search is slow: due to the usage of two
+    asterisks in front and after the text, each and every title in the
+    database has to be looked up to determine whether it matches or
+    not.  (There are currently no partial phrase indexes.)
+
+
+<h3>
+  <a name="structured">
+          Structured metadata search
+
+  </a>
+</h3>
+
+    <p>Searching within various bibliograpic fields (such as title,
+      author) is supported via Google's <code>"site:"</code> like
+      syntax.  If a search term is preceded by a field name and a
+      colon, then the term is searched for inside this field only.
+      For example, to find documents containing the
+      word <em>ellis</em> within author index, type:</p>
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="author:ellis" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    To select documents written by <em>Ellis</em> that contain words
+    like <em>muon</em>, <em>muons</em>, <em>muonic</em> within title,
+    type:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="author:ellis title:muon*" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    To select documents written by the <em>NA60</em> experiment from
+    the year <em>2001</em>, type:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="experiment:NA60 year:2001" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    The most common fields you may want to use are
+    <code>author</code>, <code>title</code>,
+    <code>reportnumber</code>, <code>abstract</code>,
+    <code>keyword</code>, <code>year</code>, <code>experiment</code>,
+    <code>fulltext</code>, and <code>reference</code>.
+
+
+<h3>
+  <a name="regexp">
+          Regular expressions
+
+  </a>
+</h3>
+
+    <p>The regular expression searching mode is mostly for the power
+      users acquainted with the traditional Unix/POSIX regexp syntax.
+      In the Simple Search interface you can trigger it by using
+      slashes instead of quotes:</p>
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="title:/^E.*s$/" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    while in the Advanced Search interface you can select the matching
+    type explicitely by using the selection box menu.  The above
+    example will find all the titles that start by the
+    letter <em>E</em>, followed by any number of any characters, and
+    end by the letter <em>s</em>.
+
+
+    <p>Another example could be an author search for an author
+      expressed in the database as either <em>Ellis, J</em>
+      or <em>Ellis, John</em>:</p>
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="author:/^Ellis, (J|John)$/" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+
+
+    <p>The regular expression search enables you to formulate very
+      specific word proximity queries.  For example, let us find all
+      titles containing words <em>dense</em> and <em>matter</em> that
+      are separated by at most one word that doesn't contain the
+      letter <em>l</em>:</p>
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="title:/dense ([^ l]* )?matter/" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+
+
+    <p>Note that you can also use character intervals such as
+      <code>[a-k]</code> and occurrence counts such
+      as <code>{3}</code>.  For example, let us find all preprints
+      that do not follow the year cataloguing policy, that
+      is <em>YYYY</em> to denote year, optionally followed
+      by <em>?</em> or by another <em>-YYYY</em>:</p>
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="collection:PREPRINT -year:/^[0-9]{4}([\?\-]|\-[0-9]{4})?$/" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    You can use also character classes such
+    <code>[:alnum:]</code>, so that the above query
+    is equivalent to:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="collection:PREPRINT -year:/^[[:digit:]]{4}([\?\-]|\-[[:digit:]]{4})?$/" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+
+
+    <p>To learn more about POSIX regular expressions, please consult the
+      <a href="http://en.wikipedia.org/wiki/Regular_expression">Wikipedia
+      regexp article</a> and the
+      <a href="http://dev.mysql.com/doc/mysql/en/Regexp.html">MySQL
+      regexp documentation</a>.</p>
+
+
+<h3>
+  <a name="span">
+          Span queries
+
+  </a>
+</h3>
+
+    <p>The span query is provided via a <code>-&gt;</code> sign.  For
+      example, to search for all documents on <em>muon decay</em> published
+      between <em>1983</em> and <em>1992</em>, type:</p>
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="muon decay year:1983-&gt;1992" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    To find all documents by authors with names ranging
+    from <em>Ellis, J</em> to <em>Ellis, Qqq</em>, type:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="author:&quot;Ellis, J&quot;-&gt;&quot;Ellis, Qqq&quot;" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+
+
+<h3>
+  <a name="referstocitedby">
+          Refersto and citedby search operators
+
+  </a>
+</h3>
+
+    <p>It is possible to search in citation network by means
+      of <code>citedby</code> and <code>refersto</code> search
+      operators.  For example, to find out who cites hep-th/0201100,
+      you can type:</p>
+
+
+<form action="https://b2find.eudat.eu/search" method="get">
+  <input type="hidden" name="ln" value="en" />
+  <blockquote>
+    <input size="40" type="text" name="p" value="refersto:reportnumber:hep-th/0201100" />
+    <select name="f">
+      <option value="">any field</option>
+      <option value="title">title</option>
+      <option value="author">author</option>
+    </select>
+    <input class="formbutton" type="submit" name="action" value="Search" />
+  </blockquote>
+</form>
+
+    <p>For example, to find out which papers are cited by Klebanov,
+      you can type:</p>
+
+
+<form action="https://b2find.eudat.eu/search" method="get">
+  <input type="hidden" name="ln" value="en" />
+  <blockquote>
+    <input size="40" type="text" name="p" value="citedby:author:klebanov" />
+    <select name="f">
+      <option value="">any field</option>
+      <option value="title">title</option>
+      <option value="author">author</option>
+    </select>
+    <input class="formbutton" type="submit" name="action" value="Search" />
+  </blockquote>
+</form>
+
+    <p>To set up a cite alert for new papers citing author
+      I. Klebanov, you can type:</p>
+
+
+<form action="https://b2find.eudat.eu/search" method="get">
+  <input type="hidden" name="ln" value="en" />
+  <blockquote>
+    <input size="40" type="text" name="p" value="refersto:author:&quot;Klebanov, I&quot;" />
+    <select name="f">
+      <option value="">any field</option>
+      <option value="title">title</option>
+      <option value="author">author</option>
+    </select>
+    <input class="formbutton" type="submit" name="action" value="Search" />
+  </blockquote>
+</form>
+
+    <p>Note that <code>refersto</code> and <code>citedby</code> search
+      operators work on any regular query.  For example, to find all
+      papers that cite papers that are tagged with the gravitino
+      keyword, type:</p>
+
+
+<form action="https://b2find.eudat.eu/search" method="get">
+  <input type="hidden" name="ln" value="en" />
+  <blockquote>
+    <input size="40" type="text" name="p" value="refersto:keyword:gravitino" />
+    <select name="f">
+      <option value="">any field</option>
+      <option value="title">title</option>
+      <option value="author">author</option>
+    </select>
+    <input class="formbutton" type="submit" name="action" value="Search" />
+  </blockquote>
+</form>
+
+    <p>Note also that these operators can be freely combined with
+      regular metadata search.  For example, to find papers authored
+      by Klebanov that are cited by Papadimitriou but that do not cite
+      any of Papadimitriou's papers themselves, you can type:</p>
+
+
+<form action="https://b2find.eudat.eu/search" method="get">
+  <input type="hidden" name="ln" value="en" />
+  <blockquote>
+    <input size="40" type="text" name="p" value="author:klebanov AND citedby:author:papadimitriou NOT refersto:author:papadimitriou" />
+    <select name="f">
+      <option value="">any field</option>
+      <option value="title">title</option>
+      <option value="author">author</option>
+    </select>
+    <input class="formbutton" type="submit" name="action" value="Search" />
+  </blockquote>
+</form>
+
+    <p>Finally, you can make use of regexp-style quoting or
+      phrase-style quoting to combine search expressions in the same
+      refersto/citedby operand.  For example, to find papers that are
+      referring to only those I. Klebanov's papers that mention O(N)
+      in the title, you can type:</p>
+
+
+<form action="https://b2find.eudat.eu/search" method="get">
+  <input type="hidden" name="ln" value="en" />
+  <blockquote>
+    <input size="40" type="text" name="p" value="refersto:/author:&quot;Klebanov, I&quot; title:O(N)/" />
+    <select name="f">
+      <option value="">any field</option>
+      <option value="title">title</option>
+      <option value="author">author</option>
+    </select>
+    <input class="formbutton" type="submit" name="action" value="Search" />
+  </blockquote>
+</form>
+
+<h3>
+  <a name="combined">
+          Combined metadata/fulltext/citation search
+
+  </a>
+</h3>
+
+    <p>All the syntax mentioned above can be combined together in one
+      query.  For example, to find documents that have the word
+      <em>ellis</em> inside author fields, that do not contain words like
+      <em>muon</em>, 'muonic' etc in any field, that contain the
+      phrase (or the substring, to be more precise) 'dense quark
+      matter' inside abstract fields, and that were published in year
+      starting by digits '200', type:</p>
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="60" type="text" name="p" value="author:ellis -muon* +abstract:'dense quark matter' year:200*" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    Note that the default "any field" global index does contain only
+    the metadata terms, not the citation nor fulltext terms.  You have
+    to explicitely mention <code>fulltext</code> or
+    <code>reference</code> index to search there.  For example, to
+    find the term <em>Higgs</em> in either metadata, references or
+    fulltext files, type:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="60" type="text" name="p" value="higgs or reference:higgs or fulltext:higgs" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    This permits an interesting combination of metadata, fulltext and
+    citation search in the same query.  For example, to get all
+    documents written by <em>Lin</em> whose fulltext files contain the
+    words <em>Schwarzschild</em> and <em>AdS</em>, and who cite
+    journal <em>Adv. Theor. Math. Phys.</em>, type:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="60" type="text" name="p" value="author:lin fulltext:Schwarzschild fulltext:AdS reference:&quot;Adv. Theor. Math. Phys.&quot;" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+
+
+<h3>
+  <a name="howto">
+          Frequently asked questions
+
+  </a>
+</h3>
+
+<h4>
+  <a name="howto-choose-terms">
+          How to wisely choose your search terms (speed-wise)
+
+  </a>
+</h4>
+
+    <ul>
+      <li>Whenever possible, prefer word searches instead of phrase
+        searches.  Search rather for <code>black hole</code> than
+        for <code>"black hole"</code>.</li>
+      <li>Avoid common terms such as <code>and</code>,
+        <code>of</code>, or <code>CERN</code>.</li>
+      <li>If you are searching for a specific metadata information,
+        such as a <em>report number</em>, choose corresponding
+        index.</li>
+      <li>If you are looking for a specific document collection, such
+        as <em>Theses</em>, choose the
+        <a href="https://b2find.eudat.eu/?c=Theses">Theses</a> collection
+        first, and start your search from there.</li>
+    </ul>
+
+
+<h4>
+  <a name="howto-search-for-author">
+          How to search for publications by a given author
+
+  </a>
+</h4>
+
+    <p>You can search for an author in many ways, each having its own
+      advantages and disadvantages.</p>
+    <ol>
+      <li>First of all, note that searching for words isn't usually
+        what you would want here.  If you choose to search for the
+        words <code>Ellis J</code> within the author index, it means
+        that two queries (for the words <code>Ellis</code>
+        and <code>J</code>) are effected first and a boolean AND is
+        performed next:
+        <form action="https://b2find.eudat.eu/search" method="get">
+          <input type="hidden" name="ln" value="en" />
+          <blockquote>
+            <input size="40" type="text" name="p" value="Ellis J" />
+            <select name="f">
+              <option value="">any field</option>
+              <option value="title">title</option>
+              <option value="author" selected="selected">author</option>
+            </select>
+            <input class="formbutton" type="submit" name="action" value="Search" />
+          </blockquote>
+        </form>
+        <p>Such a query would match also a document whose first author is
+          <em>Ellis, R</em> and the second author <em>Finch, A J</em>,
+          which is probably not what you wanted.  While the search is
+          very fast and you would have found the results for the
+          author you were looking for, such a technique could have
+          returned you many false positives, as the one cited above.
+          Instead of searching for words, a more suitable technique to
+          apply in this case is to search for phrases which will
+          permit you to achieve higher search precisions.</p>
+      </li>
+      <li>The author names are usually stored in a form containing
+        initials only, such as <em>Ellis, J</em>.  To get the list of
+        publications of an author whose name is spelled exactly that
+        way, type:
+        <form action="https://b2find.eudat.eu/search" method="get">
+          <input type="hidden" name="ln" value="en" />
+          <blockquote>
+            <input size="40" type="text" name="p" value="author:&quot;Ellis, J&quot;" />
+            <select name="f">
+              <option value="">any field</option>
+              <option value="title">title</option>
+              <option value="author">author</option>
+            </select>
+            <input class="formbutton" type="submit" name="action" value="Search" />
+          </blockquote>
+        </form>
+	<p>This way of searching gives you the highest precision and no
+	  false positives.  (Assuming there are no other authors whose
+	  names are spelled <em>Ellis, J</em>, an assumption that is
+	  often false <a href="#author-full-names"><sup>*</sup></a>.)
+	  The search is very fast.</p>
+      </li>
+      <li>Sometimes an author's first name may be spelled abbreviated
+        on some documents (such as <em>Ellis, J</em>) and sometimes
+        full on others (such as <em>Ellis, John</em>; eventually also
+        with the middle name: <em>Ellis, John Rolfe</em>).  To get the
+        list of publications for all these forms at the same time, you
+        could use a boolean OR query:
+        <form action="https://b2find.eudat.eu/search" method="get">
+          <input type="hidden" name="ln" value="en" />
+          <blockquote>
+            <input size="60" type="text" name="p" value="author:&quot;Ellis, J&quot; or author:&quot;Ellis, John&quot; or author:&quot;Ellis, John Rolfe&quot;" />
+            <select name="f">
+              <option value="">any field</option>
+              <option value="title">title</option>
+              <option value="author">author</option>
+            </select>
+            <input class="formbutton" type="submit" name="action" value="Search" />
+          </blockquote>
+        </form>
+        <p>This way of searching still keeps the highest precision and
+          no false positives.  (Assuming there are no other authors
+          whose names are spelled <em>Ellis, J</em> or <em>Ellis,
+          John</em>, an assumption that is often
+          false<a href="#author-full-names"><sup>*</sup></a>.)  The
+          search is fast.</p>
+      </li>
+      <li>To match all of the above forms in a single search term, you
+        can try to use a wildcard query:
+        <form action="https://b2find.eudat.eu/search" method="get">
+          <input type="hidden" name="ln" value="en" />
+          <blockquote>
+            <input size="40" type="text" name="p" value="author:&quot;Ellis, J*&quot;" />
+            <select name="f">
+              <option value="">any field</option>
+              <option value="title">title</option>
+              <option value="author">author</option>
+            </select>
+            <input class="formbutton" type="submit" name="action" value="Search" />
+          </blockquote>
+        </form>
+        <p>It would match all author names that start by the text
+          <code>Ellis, J</code>, i.e. not only the wanted
+          forms <em>Ellis, J</em> and <em>Ellis, John</em>, but
+          also <em>Ellis, Jim</em>, or <em>Ellis, John Rolfe</em>,
+          or <em>Ellis, Jonathan Richard</em>.</p>
+        <p>This way of searching returns you more results, which may be
+          suitable in case you don't know how the names are spelled in
+          the database.  But you also risk the eventuality of getting
+          false positives.  The search is relatively fast.</p>
+      </li>
+      <li>Yet another, the most general alternative is to use a partial
+        phrase matching:
+        <form action="https://b2find.eudat.eu/search" method="get">
+          <input type="hidden" name="ln" value="en" />
+          <blockquote>
+            <input size="40" type="text" name="p" value="author:'Ellis, J'" />
+            <select name="f">
+              <option value="">any field</option>
+              <option value="title">title</option>
+              <option value="author">author</option>
+            </select>
+            <input class="formbutton" type="submit" name="action" value="Search" />
+          </blockquote>
+        </form>
+        <p>It would find not only all the authors mentioned above, but
+          also the ones whose names contain the expression
+          <code>Ellis, J</code> anywhere inside the name, such
+          as <em>De Lellis, Jim</em>.  It thus gives you the largest
+          possible number of hits at the largest risk of false
+          positives.  The search is relatively slow.</p>
+        <p>(Note though that this way of searching may be very handy
+          in case of compound family names such <em>Pepe-Altarelli,
+          M</em> or <em>'t Hooft, G</em> where a casual user query
+          for <em>Hooft, G</em> would match the wanted author, unlike
+          the methods mentioned above.)</p>
+      </li>
+      <li>Finally, let us note that you can use the
+        <a href="#regexp">regular expression syntax</a> to construct
+        any complex author query.  A simple example is to search for
+        an author expressed in the database as either
+        <em>Ellis, J</em> or <em>Ellis, John</em>:
+        <form action="https://b2find.eudat.eu/search" method="get">
+          <input type="hidden" name="ln" value="en" />
+          <blockquote>
+            <input size="40" type="text" name="p" value="author:/^Ellis, (J|John)$/" />
+            <select name="f">
+              <option value="">any field</option>
+              <option value="title">title</option>
+              <option value="author" selected="selected">author</option>
+            </select>
+            <input class="formbutton" type="submit" name="action" value="Search" />
+          </blockquote>
+        </form>
+        Please consult <a href="#regexp">regular expression searching tips</a>
+        to know more about regular expression search possibilities.
+      </li>
+    </ol>
+    <p><a name="author-full-names"><strong><sup>*</sup>NOTE:</strong></a>
+      If you produce your own list of publications and you notice that
+      sometimes your first name is spelled abbreviated and sometimes
+      in full, or if you want to identify your publications among
+      several authors with the same abbreviation, please contact
+      the <a href="mailto:eudat-support@csc.fi">administrators</a>
+      of <CFG_SITE_NAME_INTL /> so that they could work with you on
+      inputting a consistently spelled and properly formatted first
+      name everywhere.  Only the consistent database content will
+      ensure a proper author searching behaviour.</p>
+
+
+<h4>
+  <a name="howto-sort-pattern">
+          How to sort according to a certain pattern
+
+  </a>
+</h4>
+
+    <p>You may select a certain field according to which sort the
+      search results, for example to sort the results by main title.
+      However, sometimes you may want to sort by a report number and
+      it happens that your documents have several of them.  For
+      example, the report numbers <em>hep-ph/0204140</em>,
+      <em>CERN-TH-2002-069</em> and <em>RM3-TH-02-4</em> all denote
+      <a href="https://b2find.eudat.eu/search?p=CERN-TH-2002-069&amp;f=reportnumber">the
+      same document</a>.  Now if you sort your search results set
+      containing this document, the system will take into
+      consideration the first report number, that may be either of
+      these three.  Sometimes you may want to classify this document
+      under its <em>hep-ph</em> number, sometimes under
+      its <em>CERN</em> number, depending on whether you produce a
+      list of CERN or hep-ph publications.  How can you influence the
+      search engine to prefer one report number rather than the
+      other?</p>
+    <p>In other words, the search engine by default answers a query
+      like "sort by first author" or "sort by first report number", but
+      sometimes you may want to ask the search engine to "sort by first
+      report number that starts by the text <em>CERN-</em>".  The latter
+      possibility is available via a "silent" sort parameter called
+      <code>sp</code> (for "sort pattern") that sorts preferentially
+      according to the given textual pattern if they can be found.
+      The parameter is "silent" in a way that it is not present in the
+      search interface, you have to add it manually to your search
+      URL.
+      For example, to get all CERN-TH publications of the year 2001
+      sorted by their CERN-TH numbers, you would search for
+      <code>CERN-TH-2001*</code> within <code>reportnumber</code>
+      index, and on the search results page, being satisfied with the
+      results, you would add <code>&amp;sp=CERN-TH</code> to the URL
+      to sort the results preferentially by CERN-TH report numbers, to
+      get a
+      <a href="https://b2find.eudat.eu/search?p=reportnumber%3A%22CERN-TH-2001*%22&amp;sf=reportnumber&amp;so=a&amp;sp=CERN-TH">nicely
+        sorted list</a> of all CERN-TH 2001 publications.</p>
+
+
+<h4>
+  <a name="howto-hepdoc">
+          How to get documents from other servers (Google, SPIRES, KEK)
+
+  </a>
+</h4>
+
+    <p>On the search results page, links to other servers like
+      <a href="http://google.com/">Google</a>.
+      <a href="http://www.slac.stanford.edu/spires/hep/">SPIRES</a>
+      or <a href="http://www-lib.kek.jp/KISS/kiss_prepri.html">KEK</a>
+      are automatically proposed in a box entitled "Try your search
+      on".  You can simply click on the proposed links to run your
+      query on these search engines.</p>
+    <p>Note that the links aren't printed if the search engine doesn't
+      support it.  For example, SPIRES or KEK cannot search for terms
+      within "any field", so we don't link to them in these cases.</p>
+
+
+<h4>
+  <a name="howto-fulltext">
+          How to search in fulltext files
+
+  </a>
+</h4>
+
+    <p>If a metadata record contains some associated fulltext
+      files, <CFG_SITE_NAME_INTL /> tries to extract the textual
+      information from the files and index it into a
+      separate <code>fulltext</code> index.  To search for all records
+      that contain the term <em>e-</em> in their fulltext files,
+      type:</p>
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="fulltext:e-" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    Recall that fulltext words aren't included in the default global
+    ``any field'' index, but that you may freely combine a fulltext
+    and metadata search.  For example, to find all articles written
+    by <em>Ellis</em> that contain the word <em>muon</em> either in
+    the metadata or in the fulltext, type:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="muon or fulltext:muon and author:ellis" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+
+
+<h4>
+  <a name="howto-citations">
+          How to search for citations
+
+  </a>
+</h4>
+
+    <p>If a metadata record contains an associated fulltext
+      file, <CFG_SITE_NAME_INTL /> tries to extract references
+      automatically from that file and index them into a
+      separate <code>reference</code> index.  To search for all
+      records that cite <em>Ellis</em> in their reference lists,
+      type:</p>
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="reference:Ellis" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    To search for all records that cite preprint
+    <em>hep-ph/0103062</em> in their reference lists, type:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="reference:hep-ph/0103062" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    To search for all records that cite an article from <em>Giddings</em>
+    and <em>Ross</em> published in <em>Physical Review D</em> in volume
+    <em>61</em> in year <em>2000</em>, type:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="70" type="text" name="p" value="reference:giddings reference:ross reference:&quot;Phys. Rev., D&quot; reference:61 reference:2000" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+    Recall that citation terms aren't included in the default global
+    "any field" index, but that you may freely combine a citation
+    search with a metadata search.  For example, to find all articles
+    on <em>standard model</em> that aren't written by
+    <em>Ellis</em> but that do cite him, type:
+    <form action="https://b2find.eudat.eu/search" method="get">
+      <input type="hidden" name="ln" value="en" />
+      <blockquote>
+        <input size="40" type="text" name="p" value="standard model -author:ellis reference:ellis" />
+        <select name="f">
+          <option value="">any field</option>
+          <option value="title">title</option>
+          <option value="author">author</option>
+        </select>
+        <input class="formbutton" type="submit" name="action" value="Search" />
+      </blockquote>
+    </form>
+
+
+  </div>
+  <div class="clear"></div>
+</div>
+^^^^^ Stuff taken from B2SHARE search guide !!! check what is relevant for B2FIND ??? -->
+</div>
+</div>
+
+        <!-- page.html: end block body -->
+    </div>
+    <div id="push"></div>
+  </div>
+<footer id="footer">
+  <div class="container">
+    
+  </div>
+  <!-- replaced page footer -->
+
+
+
+<div class="container footer">
+    <div class="row">
+        <div class="col-sm-9">
+            <div class="footer_links">
+                <span>
+                <a href="https://b2find.eudat.eu/">Home</a>
+                <a href="https://b2find.eudat.eu/docs/b2find-about">About</a>
+                <a href="https://b2find.eudat.eu/docs/b2find-tou">Terms of Use</a>
+                <a href="https://b2find.eudat.eu/docs/b2find-faq">FAQ</a>
+                <a href="https://b2find.eudat.eu/docs/b2find-guide">User&nbsp;Guide</a>
+                <a href="http://www.eudat.eu/support-request">Contact</a>
+                </span>
+            </div>
+        </div>
+        <div class="col-sm-3 poweredby" style="text-align:right">
+<!--
+            <div style="float:right; font-size:18px; margin: -26px 0 0 0; color: #224A7B">
+                <strong>BETA</strong>
+            </div>
+-->
+
+            <div style="float:right; margin:0 20px 0 10px">
+                <a href="http://ckan.org/">
+                    <div style="font-size:10px; margin: 2px 18px 0;">Powered by</div>
+                    <img src="/img/invenio.png" alt="CKAN"></img> <!-- v1.9999 -->
+                </a>
+            </div>
+
+            <div style="float:right">
+                <a href="http://ec.europa.eu/research/fp7/index_en.cfm">
+                    <img src="/img/fp7.png" alt="The Seventh Framework Programme"></img>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</div></footer>
+</body>
+</html>
